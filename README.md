@@ -10,7 +10,7 @@ This repository showcases various **frontend mini projects** that demonstrate sk
 
 - **HTML5** – Semantic markup and structure
 - **CSS3** – Styling, animations, and responsive design
-- **JavaScript** – Interactivity and DOM manipulation
+- **JavaScript** – Interactivity and DOM manipulation 
 - **React** *(planned)* – Component-based architecture
 
 Each folder represents an independent project with its own code and documentation.
