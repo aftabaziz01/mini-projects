@@ -6,7 +6,7 @@ A curated collection of frontend mini projects built while learning and masterin
 
 ## 📋 About
 
-This repository showcases various **frontend mini projects** that demonstrate skills in:
+This repository showcases various **frontend mini projects** that demonstrate skills in: 
 
 - **HTML5** – Semantic markup and structure
 - **CSS3** – Styling, animations, and responsive design
