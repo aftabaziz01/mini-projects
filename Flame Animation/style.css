@@ -1,77 +1,138 @@
 body{
-height: 95vh;
-display: grid;
-place-items: center;
-background: black;
+    height: 95vh;
+    display: grid;
+    place-items: center;
+    background: black;
 }
 .flame-box{
-height: 60px;
-width: 60px;
-transform-origin: center bottom;
-animation: flicker 3ms 200ms ease-in infinite alternate;
+    height: 60px;
+    width: 60px;
+    position: relative;
+    transform-origin: center bottom;
+    animation: flicker 3ms 200ms ease-in infinite alternate;
 }
 .flame{
-bottom: 0;
-position: absolute;
-border-top-left-radius: 50%;
-border-bottom-left-radius: 50%;
-border-bottom-right-radius: 50%;
-transform: rotate(-45deg) scale(1.5, 1.5);
+    bottom: 0;
+    position: absolute;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transform: rotate(-45deg) scale(1.5, 1.5);
 }
 .yellow{
-height: 30px;
-width: 30px;
-left: 15px;
-background: #ffd700;
-box-shadow: 0px 0px 9px 4px #ffd700;
+    height: 30px;
+    width: 30px;
+    left: 15px;
+    background: #ffd700;
+    box-shadow: 0px 0px 9px 4px #ffd700;
 }
 .orange{
-left: 10px;
-width: 40px;
-height: 40px;
-background: #ffa500;
-box-shadow: 0px 0px 9px 4px #ffa500;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #ffa500;
+    box-shadow: 0px 0px 9px 4px #ffa500;
 }
 .red{
-height: 50px;
-width: 50px;
-left: 5px;
-background: #ff4500;
-box-shadow: 0px 0px 5px 4px #ff4500;
+    height: 50px;
+    width: 50px;
+    left: 5px;
+    background: #ff4500;
+    box-shadow: 0px 0px 5px 4px #ff4500;
 }
 .white{
-height: 30px;
-width: 30px;
-left: 15px;
-bottom: -4px;
-background: #ffffff;
-box-shadow: 0px 0px 9px 4px #ffffff;
+    height: 30px;
+    width: 30px;
+    left: 15px;
+    bottom: -4px;
+    background: #ffffff;
+    box-shadow: 0px 0px 9px 4px #ffffff;
 }
 .circle{
-border-radius: 50%;
-position: absolute;
+    border-radius: 50%;
+    position: absolute;
 }
 .blue{
-left: 25px;
-bottom: -25px;
-width: 10px;
-height: 10px;
-background: #6a5acd;
-box-shadow: 0px 0px 15px 10px #6a5acd;
+    left: 25px;
+    bottom: -25px;
+    width: 10px;
+    height: 10px;
+    background: #6a5acd;
+    box-shadow: 0px 0px 15px 10px #6a5acd;
 }
 .black{
-left: 10px;
-bottom: -60px;
-width: 40px;
-height: 40px;
-background: #000000;
-box-shadow: 0px 0px 15px 10px #000000;
+    left: 10px;
+    bottom: -60px;
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    box-shadow: 0px 0px 15px 10px #000000;
 }
 @keyframes flicker{
-0% {transform: rotate(-1deg);}
-20%{transform: rotate(1deg);}
-40%{transform: rotate(-1deg);}
-60%{transform: rotate(1deg) scaleY(1.04);}
-80%{transform: rotate(-2deg) scaleY(0.92);}
-100% {transform: rotate(1deg);}
+    0% {transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg) scaleY(1.04);}
+    80%{transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+}
+.logs {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100px;
+}
+.logs .one,
+.logs .three {
+    width: 90px;
+}
+.logs .one .log,
+.logs .three .log {
+    position: relative;
+    height: 40px;
+    background: #725442;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 11% 100%);
+    transform-origin: 0 0;
+    transform: skewY(-10deg);
+    margin-bottom: -1px;
+}
+.logs .one::after,
+.logs .three::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 39px;
+    height: 40px;
+    border-radius: 50%;
+    background: #91725c;
+    transform: translate(-50%, -100%);
+    box-sizing: border-box;
+    border: 2px #725442 solid;
+    margin-top: 1px;
+}
+.logs .three {
+    transform: scaleX(-1);
+    margin-left: -40px;
+}
+.logs .two {
+    width: 40px;
+    transform: translateX(-50%);
+}
+.logs .two .log {
+    position: relative;
+    height: 40px;
+    background: #725442;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 100%, 0% 100%);
+    margin-bottom: -17px;
+}
+.logs .two::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    background: #91725c;
+    box-sizing: border-box;
+    border: 2px #725442 solid;
 }
