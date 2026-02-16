@@ -47,7 +47,7 @@ This repository serves as a learning playground to:
 
 ### 🔥 Flame Animation
 **Tech:** HTML & CSS  
-**Description:** A realistic flame flicker effect created using layered `div` elements and CSS `@keyframes` animations.
+**Description:** A realistic flame flicker effect created using layered `div` elements and CSS `@keyframes` animations with 3 logs.
 
 📌 *More projects coming soon...*
 
