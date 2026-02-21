@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #bceafe;
+    min-height: 100vh;
+    border: 10px solid #1d1e4c;    
+}
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+picture {
+    width: 40px;
+    height: 40px;
+}
