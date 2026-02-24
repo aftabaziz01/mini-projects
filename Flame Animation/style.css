@@ -78,10 +78,9 @@ body{
 }
 .logs {
     position: relative;
-    margin-top: -20px;
-    bottom: 0;
     display: flex;
     width: 100px;
+    margin-top: 20px;
 }
 .logs .one,
 .logs .three {
